@@ -25,7 +25,7 @@ struct SwiftfullThinkingAdvancedLearningApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ViewModifierBootCamp()
         }
         .modelContainer(sharedModelContainer)
     }
