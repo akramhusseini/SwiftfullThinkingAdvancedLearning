@@ -25,7 +25,7 @@ struct SwiftfullThinkingAdvancedLearningApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MatchedGeometryEffetExample2()
+            UIViewControllerRepresentableBootcamp()
         }
         .modelContainer(sharedModelContainer)
     }
