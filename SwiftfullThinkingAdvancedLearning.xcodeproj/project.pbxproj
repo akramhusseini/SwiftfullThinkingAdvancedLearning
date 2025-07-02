@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		EA40B31E2E14083D005FB443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA0E68992DEEC89E007A8EE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA0E68A02DEEC89F007A8EE2;
+			remoteInfo = SwiftfullThinkingAdvancedLearning;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		EA0E68A12DEEC89F007A8EE2 /* SwiftfullThinkingAdvancedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfullThinkingAdvancedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA40B31A2E14083D005FB443 /* SwiftfullThinkingAdvancedLearning_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftfullThinkingAdvancedLearning_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = SwiftfullThinkingAdvancedLearning;
 			sourceTree = "<group>";
 		};
+		EA40B31B2E14083D005FB443 /* SwiftfullThinkingAdvancedLearning_Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SwiftfullThinkingAdvancedLearning_Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EA0E689E2DEEC89F007A8EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA40B3172E14083D005FB443 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				EA0E68A32DEEC89F007A8EE2 /* SwiftfullThinkingAdvancedLearning */,
+				EA40B31B2E14083D005FB443 /* SwiftfullThinkingAdvancedLearning_Tests */,
 				EA0E68A22DEEC89F007A8EE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				EA0E68A12DEEC89F007A8EE2 /* SwiftfullThinkingAdvancedLearning.app */,
+				EA40B31A2E14083D005FB443 /* SwiftfullThinkingAdvancedLearning_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = EA0E68A12DEEC89F007A8EE2 /* SwiftfullThinkingAdvancedLearning.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EA40B3192E14083D005FB443 /* SwiftfullThinkingAdvancedLearning_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA40B3202E14083D005FB443 /* Build configuration list for PBXNativeTarget "SwiftfullThinkingAdvancedLearning_Tests" */;
+			buildPhases = (
+				EA40B3162E14083D005FB443 /* Sources */,
+				EA40B3172E14083D005FB443 /* Frameworks */,
+				EA40B3182E14083D005FB443 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA40B31F2E14083D005FB443 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EA40B31B2E14083D005FB443 /* SwiftfullThinkingAdvancedLearning_Tests */,
+			);
+			name = SwiftfullThinkingAdvancedLearning_Tests;
+			packageProductDependencies = (
+			);
+			productName = SwiftfullThinkingAdvancedLearning_Tests;
+			productReference = EA40B31A2E14083D005FB443 /* SwiftfullThinkingAdvancedLearning_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					EA0E68A02DEEC89F007A8EE2 = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					EA40B3192E14083D005FB443 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = EA0E68A02DEEC89F007A8EE2;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				EA0E68A02DEEC89F007A8EE2 /* SwiftfullThinkingAdvancedLearning */,
+				EA40B3192E14083D005FB443 /* SwiftfullThinkingAdvancedLearning_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EA0E689F2DEEC89F007A8EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA40B3182E14083D005FB443 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA40B3162E14083D005FB443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA40B31F2E14083D005FB443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA0E68A02DEEC89F007A8EE2 /* SwiftfullThinkingAdvancedLearning */;
+			targetProxy = EA40B31E2E14083D005FB443 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EA0E68AC2DEEC8A1007A8EE2 /* Debug */ = {
@@ -302,6 +377,42 @@
 			};
 			name = Release;
 		};
+		EA40B3212E14083D005FB443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M42R572D95;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.husseini.SwiftfullThinkingAdvancedLearning-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftfullThinkingAdvancedLearning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftfullThinkingAdvancedLearning";
+			};
+			name = Debug;
+		};
+		EA40B3222E14083D005FB443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M42R572D95;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.husseini.SwiftfullThinkingAdvancedLearning-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftfullThinkingAdvancedLearning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftfullThinkingAdvancedLearning";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +430,15 @@
 			buildConfigurations = (
 				EA0E68AF2DEEC8A1007A8EE2 /* Debug */,
 				EA0E68B02DEEC8A1007A8EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA40B3202E14083D005FB443 /* Build configuration list for PBXNativeTarget "SwiftfullThinkingAdvancedLearning_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA40B3212E14083D005FB443 /* Debug */,
+				EA40B3222E14083D005FB443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
