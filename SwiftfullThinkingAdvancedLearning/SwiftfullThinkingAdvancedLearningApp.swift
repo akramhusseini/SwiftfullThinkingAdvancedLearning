@@ -25,7 +25,7 @@ struct SwiftfullThinkingAdvancedLearningApp: App {
 
     var body: some Scene {
         WindowGroup {
-            DependencyInjectionBootcamp(dataService: ProductionDataService(url: URL(string: "https://jsonplaceholder.typicode.com/posts")!))
+            UITestingBootcampView()
         }
         .modelContainer(sharedModelContainer)
     }
