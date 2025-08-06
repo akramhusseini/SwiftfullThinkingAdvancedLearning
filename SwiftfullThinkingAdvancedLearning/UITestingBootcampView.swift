@@ -10,9 +10,13 @@ import SwiftUI
 
 class UITestingBootcampViewModel: ObservableObject {
     
-    let placeholderText: String = "Add your name..."
+    let placeholderText: String = "Add the name..."
     @Published var textFieldText: String = ""
-    @Published var currentUserIsSignedin: Bool = false
+    @Published var currentUserIsSignedin: Bool
+    
+    init(currentUserIsSignedin: Bool) {
+        self.currentUserIsSignedin = currentUserIsSignedin
+    }
     
     func signupButtonPressed() {
         guard !textFieldText.isEmpty else { return }
@@ -23,7 +27,11 @@ class UITestingBootcampViewModel: ObservableObject {
 
 struct UITestingBootcampView: View {
     
-    @StateObject private var vm = UITestingBootcampViewModel()
+    @StateObject private var vm: UITestingBootcampViewModel
+    
+    init(currentUserIsSignedin: Bool) {
+        _vm = StateObject(wrappedValue: UITestingBootcampViewModel(currentUserIsSignedin: currentUserIsSignedin))
+    }
     
     var body: some View {
         ZStack {
@@ -51,7 +59,7 @@ struct UITestingBootcampView: View {
 }
 
 #Preview {
-    UITestingBootcampView()
+    UITestingBootcampView(currentUserIsSignedin: true)
 }
 
 extension UITestingBootcampView {
@@ -64,6 +72,7 @@ extension UITestingBootcampView {
                 .padding()
                 .background(Color.white)
                 .cornerRadius(10)
+                .accessibilityIdentifier("SignupTextField")
             
             Button(action: {
                 withAnimation {
@@ -78,6 +87,7 @@ extension UITestingBootcampView {
                     .background(Color.blue)
                     .cornerRadius(10)
             })
+            .accessibilityIdentifier("SignupButton")
             
             
         }
@@ -105,6 +115,7 @@ struct SignedInHomeView: View {
                         .background(Color.red)
                         .cornerRadius(10)
                 }
+                .accessibilityIdentifier("ShowAlertButton")
                 .alert(isPresented: $showAlert, content: {
                     return Alert(title: Text("Welcome to the App"))
                 })
@@ -120,6 +131,7 @@ struct SignedInHomeView: View {
                             .background(Color.blue)
                             .cornerRadius(10)
                     })
+                .accessibilityIdentifier("NavigationLinkToDestination")
                 
             }
             .padding()

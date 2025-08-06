@@ -10,6 +10,17 @@ import SwiftData
 
 @main
 struct SwiftfullThinkingAdvancedLearningApp: App {
+    
+    let currentUserSignedIn: Bool
+    
+    init() {
+//        let userIsSignedIn: Bool = CommandLine.arguments.contains("-UITest_startSignedIn") ? true : false
+        let userIsSignedIn: Bool = ProcessInfo.processInfo.arguments.contains("-UITest_startSignedIn")
+//        let value = ProcessInfo.processInfo.environment["-UITest_startSignedIn2"]
+//        let userIsSignedIn: Bool = value == "true" ? true : false
+        self.currentUserSignedIn = userIsSignedIn
+    }
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,7 +36,7 @@ struct SwiftfullThinkingAdvancedLearningApp: App {
 
     var body: some Scene {
         WindowGroup {
-            UITestingBootcampView()
+            UITestingBootcampView(currentUserIsSignedin: currentUserSignedIn)
         }
         .modelContainer(sharedModelContainer)
     }
